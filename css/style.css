@@ -1,8 +1,11 @@
 html,body{padding: 0; margin: 0;}
 li,ul{
     list-style: none;}
-a{color: white;}
 
+a{
+    font-style: none;
+    color: #efebe4;
+}
 
 
 .h-auto{height: auto;}
@@ -26,18 +29,30 @@ a{color: white;}
 /* 네비게이션 */
 #navi{
     width: 100%;
+    border-bottom: solid 1px seashell;
+    background-color: transparent;
+}
+#navi{
+    width: 100%;
     border: solid 1px seashell;
     background-color: transparent;
 }
 #navi.scrolling {
     background-color: white;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    
   }
 .navbar{
 
 }
+#gnb > li > a{
+    color: aliceblue;
+}
 
-
+.text-black{
+    color: black;
+    font-weight: 300;
+}
 
 
 
@@ -59,6 +74,13 @@ a{color: white;}
     height: 100vh;
     
 }
+#myskill{
+    background: url(/img/portfolioimg/CK_yaytg1408274.jpg) no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    
+}
 
 #main_container{
     width: auto;
@@ -72,7 +94,7 @@ a{color: white;}
     font-size: 78px;
     position: relative;
 }
-
+/* 형광펜 밑줄 효과 */
 #main_container h1:before{
     content: "";
     position: absolute;
@@ -86,3 +108,5 @@ a{color: white;}
 #main_container.aos-animate h1:before{
     width:100%;
 }
+
+

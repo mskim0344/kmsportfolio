@@ -17,6 +17,8 @@
     <link rel="stylesheet" href="/css/style.css">
     <!-- 내 작업 -->
     <link  rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
 
 
     
@@ -28,12 +30,12 @@
 <section id="main_content_1" class="content">
     <header id="navi" class="navbar fixed-top">
         <div class="container d-flex justify-content-end align-items-center">
-            <ul id="#gnb" class="d-flex justify-content-between text-white">
+            <ul id="#gnb" class="d-flex justify-content-between text-white ">
                 
-                <li class="p-3"><a href="">about</a></li>
-                <li class="p-3"><a href="">myskill</a></li> 
-                <li class="p-3"><a href="">work</a> </li>
-                <li class="p-3"><a href="">contact</a> </li>                
+                <li class="p-3"><a href="#about">about</a></li>
+                <li class="p-3"><a href="#myskill">myskill</a></li> 
+                <li class="p-3"><a href="#work">work</a> </li>
+                <li class="p-3"><a href="#contact">contact</a> </li>                
             </ul>            
         </div>
     </header>
@@ -41,12 +43,15 @@
 
     <div id="main_container" data-aos="fade-up" data-aos-duration="2000" >
         <div class="container d-flex justify-content-center align-items-center"  >           
-            <h1 class="text-white"> <span class="position-relative">Hellow !</span> </h1>            
+            <h1 class="text-white"> <span class="position-relative">안녕하세요 !</span></h1>
+            <div class="position-absolute"> 개발자 김민석입니다!</div>                        
         </div>
     </div>
+   
+    
 </section>
 <!-- 메인 컨텐츠 -->
-<aside class="w100 h-20vh custom-bg">
+<aside id="about" class="w100 h-20vh custom-bg">
     
 
 </aside>
@@ -54,7 +59,11 @@
 
 
 </section>
-<!-- 두번째 컨텐츠 -->
+<!--두번째 컨텐츠  -->
+<section id="myskill">
+
+</section>
+<!-- 세번째 컨텐츠 -->
 <footer class="bg-dark">
         dd
 </footer>
@@ -67,6 +76,7 @@
 <!-- 나의것~ -->
 <script>
     AOS.init();
-  </script>
+</script>
+<script src="/js/jquery.js"></script>
 </body>
 </html>
