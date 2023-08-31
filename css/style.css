@@ -1,3 +1,4 @@
+/* 초기화 */
 html,body{padding: 0; margin: 0;}
 li,ul{
     list-style: none;}
@@ -7,24 +8,30 @@ a{
     color: #efebe4;
 }
 
-
+/*공통 클래스  */
 .h-auto{height: auto;}
 .h-10{height: 10%;} .h-3vh{height: 3vh;}
 .h-30{height: 30%;} .h-20vh{height: 20vh;}
-.h-50{height: 50%;}
-.h-70{height: 70%;}
-.h-100{height: 100%;}
+.h-50{height: 50%;} .h-100vh{height: 100vh;}
+.h-70{height: 70%;} .h-30vh{height: 30vh;}
+.h-100{height: 100%;}   .h-50vh{height: 50vh;}
 
+.t-50{top:50%}
+.l-50{left: 50%;}
+.r-50{right: 50%;}
+.b-50{bottom: 50%;}
 
-.w-auto{width: auto;}
-.w30{width: 30%;}
-.w50{width: 50%;}
-.w70{width: 70%;}
+.w-auto{width: auto;} .w-30vh{width: 30vw;}
+.w30{width: 30%;}   .w-50vh{width: 50vw;}
+.w50{width: 50%;}   .w-70vh{width: 70vw;}
+.w70{width: 70%;}   .w-100vh{width: 100vw;}
 .w100{width: 100%;}
 
 .custom-bg{
     background: #efebe4;
 }
+/* 폰트 */
+.fs{font-size: 23px; font-weight: 550; }
 
 /* 네비게이션 */
 #navi{
@@ -68,7 +75,7 @@ a{
     
 }
 #main_content_2{
-    background: url(/img/portfolioimg/CK_cm080933568.jpg) no-repeat;
+    /* background: url(/img/portfolioimg/CK_cm080933568.jpg) no-repeat; */
     background-size: cover;
     width: 100vw;
     height: 100vh;
@@ -88,6 +95,7 @@ a{
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
 }
 
 #main_container h1{
@@ -108,5 +116,33 @@ a{
 #main_container.aos-animate h1:before{
     width:100%;
 }
+/* 형광펜 밑줄 효과 */
+#main_container .yellowbar h2 span:before{
+    content: "";
+    position: absolute;
+    left:0; top:30%; bottom:25%;
+    width:0;
+    background-color:rgba(255,255,0,0.5);
+    transition: width 0.5s;
+    transition-delay: 0.5s;
+}
 
+#main_container.aos-animate .yellowbar h2 span:before{
+    width:100%;
+}
 
+/* 스와이퍼 스크롤 css */
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    font-size: 18px;
+    height: auto;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 30px;
+  }
+  /*contact  */
+  

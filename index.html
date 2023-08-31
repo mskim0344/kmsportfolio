@@ -17,6 +17,8 @@
     <link rel="stylesheet" href="/css/style.css">
     <!-- 내 작업 -->
     <link  rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <!-- 스와이퍼 css -->
+    
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
 
@@ -31,7 +33,7 @@
     <header id="navi" class="navbar fixed-top">
         <div class="container d-flex justify-content-end align-items-center">
             <ul id="#gnb" class="d-flex justify-content-between text-white ">
-                
+                <li class="p-3"><a href="#main_content_1">home</a></li>
                 <li class="p-3"><a href="#about">about</a></li>
                 <li class="p-3"><a href="#myskill">myskill</a></li> 
                 <li class="p-3"><a href="#work">work</a> </li>
@@ -41,17 +43,23 @@
     </header>
     <!-- 상단네비게이션 -->
 
-    <div id="main_container" data-aos="fade-up" data-aos-duration="2000" >
+    <div id="main_container" data-aos="fade-up" data-aos-duration="2000" class="row" >
         <div class="container d-flex justify-content-center align-items-center"  >           
-            <h1 class="text-white"> <span class="position-relative">안녕하세요 !</span></h1>
-            <div class="position-absolute"> 개발자 김민석입니다!</div>                        
+            <h1 class="text-white"> <span class="position-relative">안녕하세요 !</span></h1>                                    
         </div>
+        <div class="text-white d-flex justify-content-center container position-absoulute text-center">
+            <div class="yellowbar"><h2><span class="d-block position-relative ">Front-end 개발자</span>김민석입니다.</h2></div>
+        </div>
+        <div class="text-white fs"><span>저의 포트폴리오를 찾아와 주셔서 감사합니다!</span></div>
     </div>
    
     
 </section>
 <!-- 메인 컨텐츠 -->
-<aside id="about" class="w100 h-20vh custom-bg">
+<aside id="about" class="w100 h-30vh custom-bg">
+    
+    
+    
     
 
 </aside>
@@ -64,14 +72,35 @@
 
 </section>
 <!-- 세번째 컨텐츠 -->
-<footer class="bg-dark">
-        dd
+<footer id="contact" class="bg-dark h-30vh w100">
+    <div class="container h-100 w100 text-white">
+        <div class="h-auto ">
+            <div class="">
+                <i class="bi bi-phone-fill"></i>
+                010-6308-0344
+            </div>
+            <div class="">
+                <i class="bi bi-envelope-at-fill"></i>
+                mskim0344@gmail.com
+            </div>
+        </div>            
+        <div class="d-flex justify-content-center align-items-center h-100">
+            <a href=""><i class="bi bi-github"></i></a>
+            <a href=""><i class="bi bi-instagram"></i></a>
+            <a href=""><i class="bi bi-facebook"></i></a>
+            
+        </div>
+        
+    </div>
+    
+        
 </footer>
 <!-- 하단 -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <!-- 스와이퍼 js -->
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <!-- aos js -->
-<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-<!-- 스와이퍼 js -->
+
 <script src="js/basic.js"></script>
 <!-- 나의것~ -->
 <script>
