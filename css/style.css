@@ -3,9 +3,9 @@ html,body{padding: 0; margin: 0;}
 li,ul{
     list-style: none;}
 
-a{
+ul > li > a{
     font-style: none;
-    color: #efebe4;
+    color: #efebe4 !important;
 }
 
 /*공통 클래스  */
@@ -38,10 +38,11 @@ a{
     width: 100%;
     border-bottom: solid 1px seashell;
     background-color: transparent;
+    transition: 0.5s;
 }
 #navi{
     width: 100%;
-    border: solid 1px seashell;
+    border-bottom: solid 1px seashell;
     background-color: transparent;
 }
 #navi.scrolling {
