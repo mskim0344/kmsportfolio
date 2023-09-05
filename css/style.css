@@ -2,11 +2,12 @@
 html,body{padding: 0; margin: 0;}
 li,ul{
     list-style: none;}
+a{color: #111; text-decoration: none;}
 
-ul > li > a{
-    font-style: none;
-    color: #efebe4 !important;
-}
+
+ 
+ .white{ color: #efebe4 } 
+.black{ color: #111;} 
 
 /*공통 클래스  */
 .h-auto{height: auto;}
@@ -30,8 +31,12 @@ ul > li > a{
 .custom-bg{
     background: #efebe4;
 }
+.wrap{}
 /* 폰트 */
-.fs{font-size: 23px; font-weight: 550; }
+.fs{font-size: 23px; font-weight: 550; }    .fw-100{font-weight: 100;}
+                                            .fw-300{font-weight: 300;}
+                                            .fw-500{font-weight: 500;}
+                                            .fw-700{font-weight: 700;}
 
 /* 네비게이션 */
 #navi{
@@ -44,6 +49,7 @@ ul > li > a{
     width: 100%;
     border-bottom: solid 1px seashell;
     background-color: transparent;
+    
 }
 #navi.scrolling {
     background-color: white;
@@ -53,9 +59,9 @@ ul > li > a{
 .navbar{
 
 }
-#gnb > li > a{
+/* #gnb > li > a{
     color: aliceblue;
-}
+} */
 
 .text-black{
     color: black;
@@ -103,6 +109,12 @@ ul > li > a{
     font-size: 78px;
     position: relative;
 }
+.profile{background: url(/img/portfolioimg/CK_cb036194870.jpg) no-repeat;
+         height: auto;
+         padding-top: 10vh;
+         width: 10vh;
+
+}
 /* 형광펜 밑줄 효과 */
 #main_container h1:before{
     content: "";
@@ -146,4 +158,5 @@ ul > li > a{
     padding: 30px;
   }
   /*contact  */
+  
   
