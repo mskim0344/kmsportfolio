@@ -2,6 +2,14 @@
     font-family: "plante";
     src: url(/css/font/Plante.ttf);
 }
+@font-face {
+    font-family: "cm33000009";
+    src: url(/css/font/CK_cm33000009.ttf);
+}
+@font-face {
+    font-family: "The 푸딩W";
+    src: url(/css/font/CK_cm220124.ttf);
+}
 /* 초기화 */
 html,body{padding: 0; margin: 0;}
 li,ul{
@@ -41,11 +49,18 @@ a{color: #111; text-decoration: none;}
                                             .fw-300{font-weight: 300;}
                                             .fw-500{font-weight: 500;}
                                             .fw-700{font-weight: 700;}
-.ff{
+.ffplante{
     font-family: "plante";
     font-weight: 300;
 }
-
+.ffcm{
+    font-family: "cm33000009";
+    font-weight: 300;
+}
+.ffTHe{
+    font-family: "The 푸딩W";
+    font-weight: 300;
+}
 /* 네비게이션 */
 #navi{
     width: 100%;
@@ -63,13 +78,12 @@ a{color: #111; text-decoration: none;}
     background-color: white;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     
+    
   }
 .navbar{
 
 }
-/* #gnb > li > a{
-    color: aliceblue;
-} */
+
 
 .text-black{
     color: black;
@@ -85,7 +99,7 @@ a{color: #111; text-decoration: none;}
 
   .swiper-slide {
     background-position: center;
-    background-size: cover;
+    background-size: 111ver;
     width: 300px;
     height: 300px;
   }
@@ -99,10 +113,15 @@ a{color: #111; text-decoration: none;}
 
 /* 메인 컨텐츠 */
 #main_content_1{
-    background: url(/img/portfolioimg/CK_ti325011676.jpg) no-repeat;
+    /* background: url(/img/portfolioimg/CK_ti325011676.jpg) no-repeat; */
     background-size: cover;
     width: 100vw;
     height: 100vh;
+    background-color: #111;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     
 }
 #work{
@@ -113,7 +132,7 @@ a{color: #111; text-decoration: none;}
     
 }
 #myskill{
-    background-color: slateblue;
+    background-color: #111;
     background-size: cover;
     width: 100vw;
     height: 100vh;
@@ -122,12 +141,10 @@ a{color: #111; text-decoration: none;}
 }
 
 #main_container{
-    width: auto;
-    height: 100%;    
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+    /* position: absolute;
+    top: 5%; */
+   
+  
 }
 
 #main_container h1{
@@ -137,6 +154,11 @@ a{color: #111; text-decoration: none;}
 #about{
     height: 100vh;
     width: 100vw;
+    background-color: #111
+}
+#about h2{font-weight: 500;
+        font-size: 4rem;
+        color: #efebe4;
 }
 .profile{        
         height: 20vh;
@@ -184,12 +206,12 @@ a{color: #111; text-decoration: none;}
 }
 
 /* 스와이퍼 스크롤 css */
-.swiper {
+#myskill .swiper {
     width: 100%;
     height: 100%;
   }
 
-  .swiper-slide {
+#myskill  .swiper-slide {
     font-size: 18px;
     height: auto;
     -webkit-box-sizing: border-box;
@@ -197,4 +219,104 @@ a{color: #111; text-decoration: none;}
     padding: 30px;
   }
   /*contact  */
-  
+
+
+#navi h1 {
+    line-height: 35px; height: 35px;
+overflow: hidden;
+}
+#navi h1 span:first-child{
+    transition: 0.5s;
+    margin-top:0;
+}
+.scroll h1 span:first-child{
+    margin-top:-35px !important;
+}
+
+.scroll #navi{
+    background-color: white;
+    color:#111;    
+}
+#navi #gnb > li > a{
+    color: #efebe4;
+}
+
+.scroll #navi #gnb li a{
+    color:#111  
+}
+
+#quick{
+    position: fixed;
+    
+    bottom:0;
+    transform: translateX(100%);
+    transition: 0.7s;
+
+    
+}
+#quick li{
+    width:3rem;
+    height:3rem;
+    border-radius: 50%;
+    background-color: transparent;
+    overflow: hidden;
+    margin: 5px;
+}
+.scroll #quick{
+    
+    transform: translateX(90);
+    transition: 0.7s;
+}
+.scroll #quick li:hover{
+    background-color: blueviolet;
+    width:2rem;
+    height:2rem;
+    transition: 0.7s;
+    
+
+}
+
+.scroll h1 span{color: #111;}
+
+
+
+article.triangle:nth-child(1){   
+    background-color: #ff0000;
+       
+}
+article.triangle:nth-child(2){
+    background-color:skyblue;
+      
+}
+article.triangle:nth-child(3){ 
+    background-color:slateblue;
+      
+}
+
+.triangle {
+    width: 30vw; 
+    
+    bottom:0%; right:10%;
+    height: 30vh;
+    border-radius: 18px;
+   
+    border-bottom: 0px solid skyblue;
+    border-top: 15vh solid transparent;
+    border-left: 0px solid skyblue;
+    border-right: 0px solid transparent;
+    transition: 0.5s;}
+.triangle:hover{
+    width: 35vw; 
+    
+    bottom:0%; right:10%;
+    height: 35vh;
+    border-radius: 18px;
+    
+    
+    border-bottom: 30px solid rgb(255, 255, 255);
+    border-top: 0px solid transparent;
+    border-left: 0px solid rgb(255, 255, 255);
+    border-right: 0px solid transparent;
+    transition: 0.5s;
+
+}

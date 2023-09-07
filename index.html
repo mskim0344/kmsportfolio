@@ -20,57 +20,68 @@
     <!-- 스와이퍼 css -->
     
     
-    
-
-
-
-    
-    
-    
 
 </head>
 <body>
 <section id="main_content_1" class="content fixed">
     <header id="navi" class="navbar fixed-top">        
-        <div class="container-fluid d-flex justify-content-between align-items-center">            
-            <span class="ff white fs">kimminseok</span>
-            <ul id="#gnb" class="d-flex justify-content-between fw-700  ">
-                <li class=" pt-3 mx-3"><a class="white " href="#main_content_1">home</a></li>
-                <li class=" pt-3 mx-3"><a class="white" href="#about">about</a></li>
-                <li class=" pt-3 mx-3"><a class="white" href="#myskill">myskill</a></li> 
-                <li class=" pt-3 mx-3"><a class="white" href="#work">work</a> </li>
-                <li class=" pt-3 mx-3"><a class="white" href="#contact">contact</a> </li>                
+        <div class="container-fluid d-flex justify-content-between align-items-center">  
+            <h1>
+                <span class="ffplante white fs d-block">kimminseok</span>
+                <span class="ffcm white fs d-block">김민석</span>
+            </h1>          
+            
+            <ul id="gnb" class="d-flex justify-content-between fw-700  ">
+                <li class=" pt-3 mx-3"><a href="#main_content_1">home</a></li>
+                <li class=" pt-3 mx-3"><a href="#about">about</a></li>
+                <li class=" pt-3 mx-3"><a href="#myskill">myskill</a></li> 
+                <li class=" pt-3 mx-3"><a href="#work">work</a> </li>
+                <li class=" pt-3 mx-3"><a href="#contact">contact</a> </li>                
             </ul>            
         </div>
     </header>
     <!-- 상단네비게이션 -->
 
-    <div id="main_container" data-aos="fade-up" data-aos-duration="2000" class="row" >
+    <div id="main_container" data-aos="fade-up" data-aos-duration="2000" class="row d-block mb-5" >
         <div class="container d-flex justify-content-center align-items-center"  >           
-            <h1 class="text-white"> <span class="position-relative">안녕하세요 !</span></h1>                                    
+            <h1 class="text-white"> <span class="position-relative ffTHe">안녕하세요 !</span></h1>                                    
         </div>
         <div class="text-white d-flex justify-content-center container position-absoulute text-center">
             <div class="yellowbar"><h2><span class="d-block position-relative ">Front-end 개발자</span>김민석입니다.</h2></div>
         </div>
-        <div class="text-white fs"><span>저의 포트폴리오를 찾아와 주셔서 감사합니다!</span></div>
+        <div class="text-white fs w-100 text-center "><span>저의 포트폴리오를 찾아와 주셔서 감사합니다!</span></div>
     </div>
+    <div class="d-flex  justify-content-center align-items-center">
+        <article class="side text-white triangle mx-3">
+            프로필 사진이 들어갑니다. 
+        </article> 
+        <article class="side text-white triangle mx-3">
+            프로필 사진이 들어갑니다. 
+        </article> 
+        <article class="side text-white triangle mx-3">
+            프로필 사진이 들어갑니다. 
+        </article>
+
+    </div>  
+    
+      
+ 
+   
    
     
 </section>
 <!-- 메인 컨텐츠 -->
-<aside id="about" class="custom-bg">
+<section id="about" class="">
     <div class="wrap">
         <div class="">
-            <h2 class="text-center p-3">profile</h2>
+            <h2 class="text-center p-3 ">profile</h2>
         </div>
         
         <div class="container">
             <div class = "rounded-circl profile">
 
         </div>
-        <article>
-            ssdadasd
-        </article>
+        
     </div>
     
     
@@ -81,7 +92,7 @@
 
 <!--두번째 컨텐츠  -->
 <section id="myskill">
-    <h2 class="text-center">MY SKILL</h2>
+    <h2 class="text-center text-white">MY SKILL</h2>
     <div class="swiper mySwiper">
         <div class="swiper-wrapper">
             
@@ -152,6 +163,14 @@
     
         
 </footer>
+<aside id="quick">
+    <ul>
+        <li class="d-flex justify-content-center align-items-center"><a href="#main_container"><i class="bi bi-arrow-up-circle-fill"></i></a>
+        </li>
+        <li class="d-flex justify-content-center align-items-center"><a href="#main_container"><i class="bi bi-arrow-up-circle-fill"></i></a>
+        </li>
+    </ul>
+</aside>
 <!-- 하단 -->
 <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <!-- 스와이퍼 js -->
