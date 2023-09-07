@@ -18,17 +18,19 @@
     <!-- 내 작업 -->
     <link  rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
     <!-- 스와이퍼 css -->
-    
+    <link    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!-- 애니메이트 -->
     
 
 </head>
 <body>
-<section id="main_content_1" class="content fixed">
+<section id="main_content_1" class="content fixed ffhi">
     <header id="navi" class="navbar fixed-top">        
         <div class="container-fluid d-flex justify-content-between align-items-center">  
             <h1>
-                <span class="ffplante white fs d-block">kimminseok</span>
-                <span class="ffcm white fs d-block">김민석</span>
+                <span class="ffhi white fs d-block">kimminseok</span>
+                <span class="ffhi white fs d-block">김민석</span>
             </h1>          
             
             <ul id="gnb" class="d-flex justify-content-between fw-700  ">
@@ -41,12 +43,12 @@
         </div>
     </header>
     <!-- 상단네비게이션 -->
-
-    <div id="main_container" data-aos="fade-up" data-aos-duration="2000" class="row d-block mb-5" >
+    <!-- data-aos="fade-up" data-aos-duration="2000" -->
+    <div id="main_container"  class="row d-block mb-5" >
         <div class="container d-flex justify-content-center align-items-center"  >           
-            <h1 class="text-white"> <span class="position-relative ffTHe">안녕하세요 !</span></h1>                                    
+            <h1 class="text-white animate__bounceInLeft animate__animated"> <span class="position-relative ffspeed">안녕하세요 !</span></h1>                                    
         </div>
-        <div class="text-white d-flex justify-content-center container position-absoulute text-center">
+        <div class="text-white d-flex justify-content-center container position-absoulute text-center animate__animated">
             <div class="yellowbar"><h2><span class="d-block position-relative ">Front-end 개발자</span>김민석입니다.</h2></div>
         </div>
         <div class="text-white fs w-100 text-center "><span>저의 포트폴리오를 찾아와 주셔서 감사합니다!</span></div>
@@ -165,9 +167,9 @@
 </footer>
 <aside id="quick">
     <ul>
-        <li class="d-flex justify-content-center align-items-center"><a href="#main_container"><i class="bi bi-arrow-up-circle-fill"></i></a>
+        <li class="d-flex justify-content-center align-items-center"><a href="#main_container"><i class="bi bi-arrow-up-circle-fill text-warning"></i></a>
         </li>
-        <li class="d-flex justify-content-center align-items-center"><a href="#main_container"><i class="bi bi-arrow-up-circle-fill"></i></a>
+        <li class="d-flex justify-content-center align-items-center"><a href="#main_container"><i class="bi bi-arrow-up-circle-fill text-warning"></i></a>
         </li>
     </ul>
 </aside>

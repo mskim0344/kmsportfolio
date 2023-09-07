@@ -10,6 +10,18 @@
     font-family: "The 푸딩W";
     src: url(/css/font/CK_cm220124.ttf);
 }
+@font-face {
+    font-family: "좋은_아스피린 B";
+    src: url(/css/font/CK_ti385000063.ttf);
+}
+
+
+@font-face {
+    font-family: 'Giants-Inline';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-1@1.1/Giants-Inline.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
 /* 초기화 */
 html,body{padding: 0; margin: 0;}
 li,ul{
@@ -61,6 +73,15 @@ a{color: #111; text-decoration: none;}
     font-family: "The 푸딩W";
     font-weight: 300;
 }
+.ffhi{
+    font-family: "좋은_아스피린 B";
+    font-weight: 200;
+}
+.ffspeed{
+    font-family: 'Giants-Inline';
+    font-weight: 200;
+}
+.ff
 /* 네비게이션 */
 #navi{
     width: 100%;
@@ -148,7 +169,7 @@ a{color: #111; text-decoration: none;}
 }
 
 #main_container h1{
-    font-size: 78px;
+    font-size: 73px;
     position: relative;
     }
 #about{
@@ -247,13 +268,15 @@ overflow: hidden;
 
 #quick{
     position: fixed;
-    
+    right: 0;
     bottom:0;
     transform: translateX(100%);
     transition: 0.7s;
+    
 
     
 }
+
 #quick li{
     width:3rem;
     height:3rem;
@@ -264,11 +287,12 @@ overflow: hidden;
 }
 .scroll #quick{
     
-    transform: translateX(90);
+    transform: translateX(0);
     transition: 0.7s;
+    
 }
 .scroll #quick li:hover{
-    background-color: blueviolet;
+    background-color: rgb(0, 0, 0);
     width:2rem;
     height:2rem;
     transition: 0.7s;
