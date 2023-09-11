@@ -58,8 +58,9 @@ a{color: #111; text-decoration: none;}
 .wrap{}
 /* 폰트 */
 .fs{font-size: 23px; font-weight: 550; }    .fw-100{font-weight: 100;}
-                                            .fw-300{font-weight: 300;}
-                                            .fw-500{font-weight: 500;}
+.fs-43{
+    font-size: 43px;}                                            .fw-300{font-weight: 300;}
+.fs-30{font-size: 30px;}                                            .fw-500{font-weight: 500;}
                                             .fw-700{font-weight: 700;}
 .ffplante{
     font-family: "plante";
@@ -150,7 +151,14 @@ a{color: #111; text-decoration: none;}
     background-size: cover;
     width: 100vw;
     height: 100vh;
+    background-color: #111;
+    color: #efebe4;
     
+}
+#work .pk img{
+    width: 30%;
+    height: 30%;
+    background-size: no-repeat;
 }
 #myskill{
     background-color: #111;
