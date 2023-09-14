@@ -142,12 +142,18 @@ a{color: #111; text-decoration: none;}
 }
 
 /* 스와이퍼  #about 프로필 사진 부분 */
-.swiper {
+#about .wh{
+   height:0;
+   padding-top: 66%;
+}
+#about  .swiper {
     width: 100%;
     height:100%;
+ 
+    top:0; left:0;
   }
 
-  .swiper-slide {
+#about  .swiper-slide {
     text-align: center;
     font-size: 18px;
     background: #fff;
@@ -156,15 +162,38 @@ a{color: #111; text-decoration: none;}
     align-items: center;
     border: #b44fef solid 0.5px;
     border-radius: 5%;
-    transition: 0.5;
+    
+    object-fit: cover;
+    background-size: cover;
   }
 
-  .swiper-slide img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
+  
+
+#about .swiper-slide:nth-child(1){
+    background-image: url(/img/portfolioimg/CK_cm28007940.jpg) ;
+    
+    
+  
+
+}
+#about 
+.swiper-slide:nth-child(2){
+    background-image: url(/img/portfolioimg/CK_cm260031984.jpg) ;
+   
+    
+}
+#about 
+.swiper-slide:nth-child(3){
+    background-image: url(/img/portfolioimg/CK_cm28007940.jpg) ;
+ 
+    
+}
+#about 
+.swiper-slide:nth-child(4){
+    background-image: url(/img/portfolioimg/CK_cm260031984.jpg) ;
+  
+     
+}
 
 /* 메인 컨텐츠 */
 #main_content_1{
@@ -401,7 +430,7 @@ article.triangle:nth-child(3){
     border-radius: 5%;
     border: groove 3px #dfdfdf;
     width: 30vw;
-    height: 30vw;
+   
 }
 
 .waviy {
