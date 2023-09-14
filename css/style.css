@@ -358,8 +358,7 @@ article.triangle:nth-child(3){
 #about{
     background-color:  #111;
     display: flex;
-    justify-content: center;
-    align-items: center;
+   
     min-height: 100vh;
   }
 .waviy {
