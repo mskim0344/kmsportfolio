@@ -22,10 +22,39 @@
     font-weight: normal;
     font-style: normal;
 }
+/* 반응형 */
+@media(max-width:800px) {
+    #main_container h1 span{
+        font-size: 50px !important;
+    }
+    #gnb{
+        display: none !important;
+
+    }
+    
+}
+@media(max-width:400px) {
+    #main_container h1 span{
+        font-size: 40px !important;
+    }
+    #gnb{
+        display: none !important;
+
+    }
+    #main_content_1 article:nth-child(2),#main_content_1 article:nth-child(3){
+        display: none;
+    }
+    #main_content_1 article{
+        width: 100%;
+    }
+
+    
+}
 /* 초기화 */
 html,body{padding: 0; margin: 0;}
 li,ul{
-    list-style: none;}
+    list-style: none;
+margin: 0;}
 a{color: #111; text-decoration: none;}
 
 
@@ -180,15 +209,11 @@ a{color: #111; text-decoration: none;}
     font-size: 73px;
     position: relative;
     }
-/* #about{
-    height:100vh;
-    width: 100vw;
-    background-color: #111
-} */
+
 
 .profile{        
-        height: 20vh;
-        width: 20vw;
+        height: 22vh;
+        width: 22vw;
         border-radius: 50%;
         transition: 0.5s;
         
@@ -339,12 +364,10 @@ article.triangle:nth-child(3){
     border-right: 0px solid transparent;
     transition: 0.5s;}
 .triangle:hover{
-    width: 35vw; 
-    
+    width: 35vw;     
     bottom:0%; right:10%;
-    height: 35vh;
-    border-radius: 18px;
-    
+    height: 33vh;
+    border-radius: 18px;    
     
     border-bottom: 30px solid rgb(255, 255, 255);
     border-top: 0px solid transparent;
@@ -356,13 +379,27 @@ article.triangle:nth-child(3){
 
 /* about 작업 */
 #about{
-    background-color:  #111;
-    display: flex;
-   
+    background-color:  #111;       
     min-height: 100vh;
   }
+
+/* #about article{
+    position: absolute;
+    top: 125%;
+    left: 10%;
+    border-radius: 5%;
+    height: 40vh;
+    width: auto;
+    border: double;
+} */
+
+.ccc{background-color: #ccc;
+    border-radius: 5%;
+    border: groove 3px #dfdfdf;
+}
+
 .waviy {
-    position: relative;
+    
     -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(0,0,0,.2));
     font-size: 60px;
   }
